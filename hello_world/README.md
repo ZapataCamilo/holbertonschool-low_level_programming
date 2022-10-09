@@ -5,3 +5,7 @@
 2.In this script I just tell that the compilition just only make the assembly step in the compilition process.
 
 3.In this script I tell that compiles a c file and with -o I just tell that the executable name is cisfun.
+
+4.In this script I tell that prints ""Programming is like building a multilingual puzzle with puts"
+
+5.Int his script I tell that prints "with proper grammar, but the outcome is a piece of art," with printf
