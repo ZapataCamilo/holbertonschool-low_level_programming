@@ -9,10 +9,14 @@
 int main(void)
 {
 	char Main;
+
 	for (Main = 'a'; Main <= 'z'; Main++)
 	{
 		putchar(Main);
-		putchar('\n');
+		if (Main == 'z')
+		{
+			putchar('\n');
+		}
 	}
 	return (0);
 }
