@@ -5,25 +5,25 @@
 /**
  * main - Entry point
  *
- * Return: Always 0 (Success)
+ *  Return: Always 0 (Success)
  */
 int main(void)
 {
-int n;
+	int n;
 
-srand(time(0));
-n = rand() - RAND_MAX / 2;
-if (n > 0)
-}
-printf("%dis positive\n");
-}
-if (n == 0)
-}
-printf("%dis zero\n");
-}
-else if (n < 0)
-{
-printf("%dis negative\n");
-}
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	if (n > 0)
+	{
+		printf("is positive%d\n", n);
+	}
+	if (n == 0)
+	{
+		printf("is zero%d\n", n);
+	}
+	else if (n < 0)
+	{
+		printf("is negative%d\n", n);
+	}
 return (0);
 }
