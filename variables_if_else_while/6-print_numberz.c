@@ -14,7 +14,6 @@ int main(void)
 	{
 
 		putchar(numberchar);
-		
 		if (numberchar == '9')
 		{
 			putchar('\n');
