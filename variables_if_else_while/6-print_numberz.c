@@ -12,11 +12,11 @@ int main(void)
 
 	for (numberchar = '0'; numberchar <= '9'; numberchar++)
 	{
-
-		putchar(numberchar);
-		if (numberchar == '9')
-		{
-			putchar('\n');
-		}
+		 putchar(numberchar);
+		 if (numberchar == '9')
+		 {
+			 putchar('\n');
+		 }
 	}
+	return (0);
 }
