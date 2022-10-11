@@ -9,7 +9,6 @@
 int main(void)
 {
 	char Main;
-	char Mayus;
 
 	for (Main = 'a'; Main <= 'd'; Main++)
 	{
