@@ -15,16 +15,10 @@ for (number = '0'; number <= '9'; number++)
 {
 putchar(number);
 }
-if (number = '9')
-{
 for (letter = 'a'; letter <= 'f'; letter++)
 {
 putchar(letter);
-if (letter == 'f')
-{
-putchar('\n');
 }
-}
-}
+printf("\n");
 return (0);
 }
