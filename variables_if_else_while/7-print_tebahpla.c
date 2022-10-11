@@ -12,7 +12,7 @@ int main(void)
 
 	for (alph = 'a'; alph <= 'z'; alph++)
 	{
-		
+
 		if (alph == 'a')
 		{
 			for (alph = 'z'; alph >= 'a'; alph--)
