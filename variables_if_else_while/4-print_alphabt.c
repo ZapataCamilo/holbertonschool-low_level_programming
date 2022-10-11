@@ -10,21 +10,15 @@ int main(void)
 {
 	char Main;
 
-	for (Main = 'a'; Main <= 'd'; Main++)
+	for (Main = 'a'; Main <= 'z'; Main++)
 	{
-		putchar(Main);
-
-	}
-	for (Main = 'f'; Main <= 'p'; Main++)
-	{
-		putchar(Main);
-	}
-	for (Main = 'r'; Main <= 'z'; Main++)
-	{
-		putchar(Main);
-		if (Main == 'z')
+		if (Main != 'e' && Main != 'q')
 		{
-			putchar('\n');
+			putchar(Main);
+			if (Main == 'z')
+			{
+				putchar('\n');
+			}
 		}
 	}
 	return (0);
