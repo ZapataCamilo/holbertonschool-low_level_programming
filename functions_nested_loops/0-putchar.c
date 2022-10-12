@@ -16,7 +16,7 @@ int main(void)
 	{
 		if (*w != "_")
 		{
-			w++
+			w++;
 		}
 		_putchar(*w);
 	}
