@@ -14,10 +14,7 @@ int main(void)
 
 	while (*w)
 	{
-		while (*w == "p")
-		{
-			w++;
-		}
+		w--;
 		_putchar(*w);
 	}
 	_putchar('\n');
