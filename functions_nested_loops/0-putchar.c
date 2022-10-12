@@ -14,7 +14,7 @@ int main(void)
 
 	while (*w)
 	{
-		if (*w != "_")
+		while (*w == "p")
 		{
 			w++;
 		}
