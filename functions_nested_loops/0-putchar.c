@@ -1,5 +1,6 @@
 #include <unistd.h>
 #include "main.h"
+
 /* more headers goes there */
 
 /**
@@ -9,12 +10,12 @@
 */
 int main(void)
 {
-	char *w = "\_putchar";
+	char *w = "_putchar";
 
 	while (*w)
 	{
 		w++;
-		_putchar(w);
+		_putchar(*w);
 	}
 	_putchar('\n');
 
