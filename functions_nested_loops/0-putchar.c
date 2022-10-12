@@ -14,7 +14,10 @@ int main(void)
 
 	while (*w)
 	{
-		w++;
+		if (*w != "_")
+		{
+			w++
+		}
 		_putchar(*w);
 	}
 	_putchar('\n');
