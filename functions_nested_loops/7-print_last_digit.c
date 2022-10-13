@@ -6,7 +6,7 @@
 /* more headers goes there */
 
 /**
-*print_last-digit- check the code
+*print_last_digit- check the code
 *@k: Input int
 * Description:  The script pritn alpha case
 *
@@ -14,11 +14,13 @@
 */
 int print_last_digit(int k)
 {
+
 	int o;
-	
+
 	if (k < 0)
 	{
-		o = -1 * (k % 10); 
+		o = -1 * (k % 10);
+
 	}
 	else
 	{
