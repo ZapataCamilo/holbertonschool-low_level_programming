@@ -14,6 +14,20 @@
 */
 int print_last_digit(int k)
 {
-	int s = k + ("-1");
-	return (s % 10);
+	int o = (k % 10);
+	int l = (j*(-1));
+	if (o >= 0)
+	{
+		_putchar('0'+o);
+		_putchar('\n');
+
+	}
+	else
+	{
+		_putchar('0'+l);
+		_putchar('\n');
+		return (l);
+	}
+	return (o);
+
 }
