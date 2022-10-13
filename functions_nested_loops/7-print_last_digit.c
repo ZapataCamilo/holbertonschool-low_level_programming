@@ -18,7 +18,7 @@ int print_last_digit(int k)
 	
 	if (o > 0)
 	{
-		o = -1 * (r % 10); 
+		o = -1 * (k % 10); 
 	}
 	else
 	{
