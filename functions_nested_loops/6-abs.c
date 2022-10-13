@@ -20,4 +20,5 @@ int _abs(int k)
 	{
 		_putchar(j);
 	}
+	return (0);
 }
