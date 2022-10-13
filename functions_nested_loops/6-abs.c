@@ -18,7 +18,7 @@ int _abs(int k)
 
 	if (j >= 0)
 	{
-		_putchar(j);
+		return(j);
 	}
 	return (0);
 }
