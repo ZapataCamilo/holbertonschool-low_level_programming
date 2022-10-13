@@ -12,14 +12,14 @@
 *
 * Return: Always 0 (Success)
 */
-int void jack_bauer(void)
+void jack_bauer(void)
 {
 	int t;
 	int h;
 
-	for (t = 0; 7 <= 24)
+	for (t = 0; 7 <= 24; t++)
 	{
-		for (h = 0; h <= 60)
+		for (h = 0; h <= 60; h++)
 		{
 			_putchar((t) + '0');
 			_putchar((t % 10) + '0');
