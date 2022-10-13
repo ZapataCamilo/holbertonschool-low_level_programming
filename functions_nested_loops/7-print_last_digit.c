@@ -15,18 +15,18 @@
 int print_last_digit(int k)
 {
 
-	int o;
+	int o = (K % 10);
+	int r = (O * (-1));
 
-	if (k < 0)
+	if (o >= 0)
 	{
-		o = -1 * (k % 10);
+		_putchar(48 + o);
+		return (o);
 
 	}
 	else
 	{
-		o = k % 10;
-
-		_putchar((o % 10) + '0');
+		_putchar(48 + r);
+		return (r);
 	}
-	return (o % 10);
 }
