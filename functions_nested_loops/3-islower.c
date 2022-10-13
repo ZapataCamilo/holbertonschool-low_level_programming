@@ -5,24 +5,21 @@
 /* more headers goes there */
 
 /**
-* int _islower - check the code
+* int _islower(int c) - check the code
 *
 * Return: Always 0 (Success)
 */
 int _islower(int c)
 {
 
-	if (islower(c))
-	{
-		_putchar(c);
-	}
-	if (c == 'c')
-	{
-		return (1);
-	}
-	else
+	int a = islower(c);
+
+	if (a == 0) /*si la letra es mayuscula*/
 	{
 		return (0);
 	}
-	_putchar('\n');
+	else
+	{
+		return (1);
+	}
 }
