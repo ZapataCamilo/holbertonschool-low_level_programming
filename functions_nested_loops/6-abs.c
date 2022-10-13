@@ -20,9 +20,5 @@ int _abs(int k)
 	{
 		_putchar(j);
 	}
-	if(j < 0)
-	{
-		_putchar(j);
-	}
 	return (0);
 }
