@@ -13,10 +13,11 @@
 */
 int _abs(int)
 {
-	int k;
+	int k = abs(int);
+	int j;
 
-	if (k)
+	if (j > 0)
 	{
-		int k = abs(int);
+		_putchar(k);
 	}
 }
