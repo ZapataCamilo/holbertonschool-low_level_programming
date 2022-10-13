@@ -5,7 +5,9 @@
 /* more headers goes there */
 
 /**
-* int _islower(int c) - check the code
+* _islower - check the code
+*@c: Input char
+* Description:  The script pritn lower case
 *
 * Return: Always 0 (Success)
 */
