@@ -14,7 +14,7 @@ int _islower(int c)
 
 	if (islower(c))
 	{
-		_putchar("'\c'", c);
+		_putchar(c);
 	}
 	if (c == 'c')
 	{
