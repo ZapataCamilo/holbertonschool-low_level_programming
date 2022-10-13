@@ -12,6 +12,10 @@
 int _islower(int c)
 {
 
+	c = _islower('h');
+	c = _islower('o');
+	c = _islower(108);
+
 	if (islower(c))
 	{
 		_putchar(c);
