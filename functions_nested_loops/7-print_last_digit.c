@@ -14,13 +14,5 @@
 */
 int print_last_digit(int k)
 {
-
-	int m;
-
-	if (m >= 0)
-	{
-		m = k % 100;
-	}
-
-	return(m);
+	return (n % 10);
 }
