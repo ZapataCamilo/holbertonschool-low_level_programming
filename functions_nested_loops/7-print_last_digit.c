@@ -14,7 +14,7 @@
 */
 int print_last_digit(int k)
 {
-	int j = k % 10;
+	printf(k);
 
-	return(j);
+	return(k % 10);
 }
