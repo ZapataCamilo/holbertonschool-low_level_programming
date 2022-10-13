@@ -6,7 +6,7 @@
 /* more headers goes there */
 
 /**
-*_abs- check the code
+*print_last-digit- check the code
 *@k: Input int
 * Description:  The script pritn alpha case
 *
@@ -14,7 +14,13 @@
 */
 int print_last_digit(int k)
 {
-	printf(k);
 
-	return(k % 10);
+	int m;
+
+	if (m)
+	{
+		m = k % 100;
+	}
+
+	return(m);
 }
