@@ -22,7 +22,7 @@ int print_last_digit(int k)
 	}
 	else
 	{
-		n = -1 * (k % 10);
+		o = -1 * (k % 10);
 
 		_putchar('0' + (o % 10));
 		return (o % 10);
