@@ -6,8 +6,8 @@
 /* more headers goes there */
 
 /**
-*print_sign - check the code
-*@n: Input char
+*_abs- check the code
+*@k: Input int
 * Description:  The script pritn alpha case
 *
 * Return: Always 0 (Success)
@@ -18,7 +18,7 @@ int _abs(int k)
 
 	if (j >= 0)
 	{
-		return(j);
+		return (j);
 	}
-	return(j);
+	return (j);
 }
