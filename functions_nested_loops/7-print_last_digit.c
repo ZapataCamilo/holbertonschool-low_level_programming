@@ -15,19 +15,17 @@
 int print_last_digit(int k)
 {
 	int o = (k % 10);
-	int l = (j*(-1));
-	if (o >= 0)
+	
+	if (o > 0)
 	{
-		_putchar('0'+o);
-		_putchar('\n');
-
+		o = k % 10;
 	}
 	else
 	{
-		_putchar('0'+l);
-		_putchar('\n');
-		return (l);
+		n = -1 * (k % 10);
+
+		_putchar('0' + (o % 10));
+		return (o % 10);
 	}
-	return (o);
 
 }
