@@ -12,13 +12,12 @@
 *
 * Return: Always 0 (Success)
 */
-int _abs(int)
+int _abs(int k)
 {
-	int k = abs;
-	int j;
+	int j = abs(k);
 
 	if (j > 0)
 	{
-		_putchar(k);
+		_putchar(j);
 	}
 }
