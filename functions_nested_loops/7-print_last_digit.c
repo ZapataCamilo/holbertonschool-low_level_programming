@@ -17,7 +17,7 @@ int print_last_digit(int k)
 
 	int m;
 
-	if (m)
+	if (m >= 0)
 	{
 		m = k % 100;
 	}
