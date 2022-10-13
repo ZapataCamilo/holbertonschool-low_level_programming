@@ -16,7 +16,7 @@ int _abs(int k)
 {
 	int j = abs(k);
 
-	if (j > 0)
+	if (j >= 0)
 	{
 		_putchar(j);
 	}
