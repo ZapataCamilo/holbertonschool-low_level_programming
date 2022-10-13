@@ -6,9 +6,9 @@
 /* more headers goes there */
 
 /**
-*print_last_digit- check the code
-*@k: Input int
-* Description:  The script pritn alpha case
+*jack_bauer- check the code
+*void: Input int
+* Description:  The script pritn the hour
 *
 * Return: Always 0 (Success)
 */
