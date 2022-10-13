@@ -14,7 +14,7 @@
 */
 int _abs(int)
 {
-	int k = abs(int);
+	int k = abs
 	int j;
 
 	if (j > 0)
