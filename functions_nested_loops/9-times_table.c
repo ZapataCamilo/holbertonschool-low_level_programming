@@ -6,7 +6,7 @@
 /* more headers goes there */
 
 /**
-*jack_bauer- check the code
+*times_table - check the code
 *void: Input int
 * Description:  The script pritn the hour
 *
