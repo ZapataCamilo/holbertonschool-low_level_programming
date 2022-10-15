@@ -4,7 +4,7 @@ OBJ = $(SRC:.c=.o)
 Name = school
 RM = rm -f
 
-all: $(SRC)
+all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 .PHONY: clean oclean fclean
