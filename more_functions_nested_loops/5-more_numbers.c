@@ -10,8 +10,7 @@ void more_numbers(void)
 	int c = 0;
 	int b = 0;
 
-	do
-	{
+	do {
 		while (b <= 14)
 		{
 			if (b > 9)
@@ -22,5 +21,5 @@ void more_numbers(void)
 		_putchar('\n');
 		c++;
 		b = 0;
-	}while (c <= 9);
+	} while (c <= 9);
 }
