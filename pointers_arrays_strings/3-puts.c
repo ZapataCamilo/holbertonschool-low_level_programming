@@ -3,7 +3,7 @@
 
 /**
 *_puts - check the code
-*@str is the pointer
+*@str: is the pointer
 * Return: Always 0.
 */
 
