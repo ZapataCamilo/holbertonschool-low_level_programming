@@ -3,13 +3,18 @@
 #include <string.h>
 
 /**
-* main - check the code
-*
+* _strlen - check the code
+*@s: is the pointer
 * Return: Always 0.
 */
 int _strlen(char *s)
 {
-	*s = strlen(s);
+	int length = 0;
 
-	return (0);
+	if (*s)
+	{
+		length = strlen(s);
+	}
+
+	return (length);
 }
