@@ -4,7 +4,7 @@
 
 /**
 *print_rev - check the code
-*
+*@s: is the poimter
 * Return: Always 0.
 */
 void print_rev(char *s)
