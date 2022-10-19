@@ -2,18 +2,19 @@
 #include "main.h"
 
 /**
-* main - check the code
-*
+*puts2 - check the code
+*@str: is the pointer
 * Return: Always 0.
 */
 void puts2(char *str)
 {
 	int p = 0;
-	
-	while (*(str+p))
+
+	while (*(str + p))
 	{
-		putchar(*(str + p));
-		p = p + 2;
+		_putchar(*(str + p));
+		p++;
+		p++;
 	}
 	putchar('\n');
 }
