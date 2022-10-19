@@ -17,7 +17,7 @@ void puts_half(char *str)
 	}
 	while (second < number / 2)
 	{
-		_putchar(str[(number / 2) + second]);
+		_putchar(str[(number / 2 + 1) + second]);
 		second++;
 	}
 	_putchar('\n');
