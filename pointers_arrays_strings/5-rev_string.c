@@ -8,6 +8,19 @@
 */
 void rev_string(char *s)
 {
-	s = "loohcS yM";
-	printf("%s\n", s);
+	int prin = 0;
+	char seg = '\0';
+	int i = 0;
+
+	while (s[prin] != '\0')
+	{
+		prin++;
+	}
+	while (i < prin--)
+	{
+		seg = s[i];
+		s[i++] = s[prin];
+		s[prin] = seg;
+	}
+
 }
