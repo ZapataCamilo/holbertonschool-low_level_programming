@@ -2,8 +2,8 @@
 #include "main.h"
 
 /**
-* main - check the code
-*
+* puts_half - check the code
+*@str: Is the pointer
 * Return: Always 0.
 */
 void puts_half(char *str)
