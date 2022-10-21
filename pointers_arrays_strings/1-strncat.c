@@ -2,8 +2,10 @@
 #include "main.h"
 
 /**
-* main - check the code
-*
+* _strncat - check the code
+*@dest: Is a string
+*@src: Is pointer
+*@n: Is a int
 * Return: Always 0.
 */
 char *_strncat(char *dest, char *src, int n)
