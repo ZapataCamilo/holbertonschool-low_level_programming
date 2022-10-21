@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#include <string.h>
 
 /**
 * _strncat - check the code
@@ -11,16 +12,17 @@
 char *_strncat(char *dest, char *src, int n)
 {
 	int c = 0;
-	int b = 0;
+	int b;
 
-	while (dest[c] != '\0')
+	b = strlen(dest);
+
+	if (src[0] != '\0')
 	{
-		c++;
+		for (; c < n; c++, b++)
+		{
+			dest[b] = src[c];
+		}
+		dest[b + 1] = '\0';
 	}
-	for (b = 0; b < n; c++, b++)
-	{
-		dest[c] = src[b];
-	}
-	dest[c] = '\0';
 	return (dest);
 }
