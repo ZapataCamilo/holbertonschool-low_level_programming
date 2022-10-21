@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#include <string.h>
 
 /**
 *puts2 - check the code
@@ -10,7 +11,7 @@ void puts2(char *str)
 {
 	int p = 0;
 
-	while (*(str + p))
+	while (p < (int)strlen(str))
 	{
 		_putchar(*(str + p));
 		p++;
