@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
-* _strncat - check the code
+* _strncpy - check the code
 *@dest: Is a string
 *@src: Is pointer
 *@n: Is a int
