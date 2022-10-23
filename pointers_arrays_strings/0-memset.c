@@ -2,8 +2,10 @@
 #include "main.h"
 
 /**
-* main - check the code
-*
+* _memset - llena la memori
+*@s: espacio de la memoria para llenar
+*@n: Numero de espacio para llenar
+*@b: byte para llenar
 * Return: Always 0.
 */
 char *_memset(char *s, char b, unsigned int n)
