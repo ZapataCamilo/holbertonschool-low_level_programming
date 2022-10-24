@@ -2,8 +2,9 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
+ * _strchr - check the code
+ *@s: Is a string that have the value
+ *@c: Is a char
  * Return: Always 0.
  */
 char *_strchr(char *s, char c)
