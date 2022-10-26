@@ -2,10 +2,10 @@
 #include "main.h"
 
 /**
-   * main - check the code
-    *
-     * Return: Always 0.
-      */
+* _strlen_recursion - Is the funtion
+*@s: Is the string to print
+* Return: Always 0.
+*/
 int _strlen_recursion(char *s)
 {
 	if (*s == '\0')
@@ -14,6 +14,6 @@ int _strlen_recursion(char *s)
 	}
 	else
 	{
-		return 1 + _strlen_recursion(s +1);
+		return (1 + _strlen_recursion(s + 1));
 	}
 }
