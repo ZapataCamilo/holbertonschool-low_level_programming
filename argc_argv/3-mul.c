@@ -3,8 +3,8 @@
 
 /**
   * main - check the code
-  *@argc: In this code give me the number of strings
-  *@argv: Do anything
+  *@argc: Check that the conditions are met
+  *@argv: print the number that I put
   * Return: Always 0.
   */
 int main(int argc, char *argv[])
@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	}
 	if (argv[1] && argv[2])
 	{
-		printf("%d\n", atoi(argv[1]) *atoi(argv[2]));
+		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 	}
 	return (0);
 }
