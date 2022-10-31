@@ -6,7 +6,7 @@
   *@size: Is the length of malloc
   *@c: Is the char that I print
   *
-  *return - return the punt
+  *  Return: Always 0.
 */
 
 char *create_array(unsigned int size, char c)
