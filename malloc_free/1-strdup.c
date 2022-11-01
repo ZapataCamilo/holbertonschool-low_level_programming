@@ -3,8 +3,8 @@
 #include "main.h"
 
 /**
-* main - check the code
-*
+* _strdup - check the code
+*@str: The string to copy
 * Return: Always 0.
 */
 char *_strdup(char *str)
@@ -25,17 +25,16 @@ char *_strdup(char *str)
 
 	two = malloc(sizeof(*str) * count + 1);
 
-	while (p < count)
-	{
-		two[p] = str[p];
-		p++;
-	}
-
 	if (two == NULL)
 	{
 		return (NULL);
 	}
 
+	while (p < count)
+	{
+		two[p] = str[p];
+		p++;
+	}
 	return (two);
 	free(two);
 }
