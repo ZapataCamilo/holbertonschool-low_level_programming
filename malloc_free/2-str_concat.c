@@ -15,6 +15,16 @@ char *str_concat(char *s1, char *s2)
 	unsigned int i = 0;
 	unsigned int l = 0;
 
+	if (s1 == NULL)
+	{
+		s1 = '\0';
+	}
+
+	if (s2 == NULL)
+	{
+		s2 = '\0';
+	}
+
 	while (s1[count] != '\0')
 	{
 		count++;
@@ -26,16 +36,6 @@ char *str_concat(char *s1, char *s2)
 
 	two = malloc(sizeof(*s1) * (count + p) + 1);
 
-
-	if (s1 == NULL)
-	{
-		s1 = '\0';
-	}
-
-	if (s2 == NULL)
-	{
-		s2 = '\0';
-	}
 
 	if (two == NULL)
 	{
