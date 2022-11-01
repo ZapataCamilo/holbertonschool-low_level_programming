@@ -23,7 +23,7 @@ char *_strdup(char *str)
 		count++;
 	}
 
-	two = malloc(sizeof(*str) * count);
+	two = malloc(sizeof(*str + 1) * count);
 
 	while (p < count)
 	{
