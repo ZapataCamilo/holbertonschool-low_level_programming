@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
-
 /**
-* _strdup - check the code
-*@str: The string to copy
+* str_concat - check the code
+*@s1: The string to copy
+*@s2: the string to copy
 * Return: Always 0.
 */
 char *str_concat(char *s1, char *s2)
@@ -17,14 +17,12 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL)
 	{
-		s1 = '\0';
+		s1 = "";
 	}
-
 	if (s2 == NULL)
 	{
-		s2 = '\0';
+		s2 = "";
 	}
-
 	while (s1[count] != '\0')
 	{
 		count++;
@@ -33,21 +31,16 @@ char *str_concat(char *s1, char *s2)
 	{
 		p++;
 	}
-
 	two = malloc(sizeof(*s1) * (count + p) + 1);
-
-
 	if (two == NULL)
 	{
 		return (NULL);
 	}
-
 	while (i < count)
 	{
 		two[i] = s1[i];
 		i++;
 	}
-
 	while (l < p)
 	{
 		two[i + l] = s2[l];
