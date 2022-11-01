@@ -31,6 +31,16 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 
+	if (s1 == NULL)
+	{
+		s1 = '\0';
+	}
+
+	if (s2 == NULL)
+	{
+		s2 = '\0';
+	}
+
 	while (i < count)
 	{
 		two[i] = s1[i];
