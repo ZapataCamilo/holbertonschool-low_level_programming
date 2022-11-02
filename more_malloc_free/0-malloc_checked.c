@@ -9,7 +9,8 @@
 */
 void *malloc_checked(unsigned int b)
 {
-   	void *count;
+	void *count;
+
 	count = malloc(b);
 
 	if (count == NULL)
