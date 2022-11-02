@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
-/*
- * free_grid - The funtion
- *@grid: The pointer
- *@height: The height
- */
+/**
+* free_grid - Is the funtion that is call
+*@grid: Is the length of malloc
+*@height: Is the char that I print
+*
+*  Return: Always 0.
+*/
 void free_grid(int **grid, int height)
 {
 	int x;
@@ -14,5 +16,6 @@ void free_grid(int **grid, int height)
 	{
 		free(grid[x]);
 	}
-	free (grid);
+
+	free(grid);
 }
