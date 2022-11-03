@@ -44,13 +44,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (str == NULL)
 		return (NULL);
-
+	
 	for (; number < numd - n; number++)
 		str[number] = s1[number];
 	for (; l < n; l++)
 		str[number + l] = s2[l];
+
 	str[numd] = '\0';
 
 	return (str);
-	free (str);
 }
