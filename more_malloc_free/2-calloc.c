@@ -12,16 +12,18 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *str = NULL;
 	unsigned int index = 0;
-
-	str = malloc(nmemb * size);
+	unsigned int total = nmemb * size;
 
 	if (nmemb == 0)
 		return (NULL);
 	if (size == 0)
 		return (NULL);
+	
+	str = malloc(total);
+
 	if (str == NULL)
 		return (NULL);
-	for(; index < (nmemb * size); index++)
+	for(; index < total; index++)
 		str[index] = 0;
 
 	return (str);
