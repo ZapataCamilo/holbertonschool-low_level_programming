@@ -46,6 +46,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	
 	for (; l < n; l++)
 		str[number + l] = s2[l];
-
 	return (str);
+
+	free(str);
 }
