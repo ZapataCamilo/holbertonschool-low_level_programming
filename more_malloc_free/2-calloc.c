@@ -4,8 +4,9 @@
 #include <string.h>
 
 /**
- * _strlen - check the code
- *@s: is the pointer
+ * _calloc - check the code
+ *@nmemb: is the length of memory of _calloc
+ *@size: is the length of stirng
  * Return: Always 0.
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
@@ -18,12 +19,12 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	if (size == 0)
 		return (NULL);
-	
 	str = malloc(total);
 
 	if (str == NULL)
 		return (NULL);
-	for(; index < total; index++)
+
+	for  (; index < total; index++)
 		str[index] = 0;
 
 	return (str);
