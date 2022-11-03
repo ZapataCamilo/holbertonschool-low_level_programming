@@ -10,43 +10,47 @@
  */
 int _strlen(char *s)
 {
-  int length = 0;
+	int length = 0;
 
-  if (*s)
-    {
-      length = strlen(s);
-    }
+	while (s[length] != 0)
+		lenght++;
 
-  return (length);
+	return (length);
 }
 
 /**
-* malloc_checked - allocates memory using malloc
-* @b: integer
+* string_nconcat - allocates memory using malloc
+* @s1:s the string
+* @s2: is the stirng that we have to concatenate
+* @n:  is greater or equal to the length of s2 then use the entire string s
+* @n:  is greater or equal to the length of s2 then use the entire string s2
 * Return: pointer to allocated memory
 */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int number = 0;
-	unsigned int numd = _strlen(s1) + n;
+	unsigned int numd = 0;
 	unsigned int l = 0;
 	char *str = NULL;
-
-	str = malloc((numd) * sizeof(str));
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
+
+	numd = _strlen(s1) + n;
+
+	str = malloc((numd + 1) * sizeof(str));
+
 	if (str == NULL)
 		return (NULL);
 
 	for (; number < numd - n; number++)
 		str[number] = s1[number];
-	
 	for (; l < n; l++)
 		str[number + l] = s2[l];
-	return (str);
+	str[numd] = '\0';
 
+	return (str);
 	free(str);
 }
