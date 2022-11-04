@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /*
- * main - Is the funtion.
+ *main - Is the funtion.
  *
  */
 int main(void)
