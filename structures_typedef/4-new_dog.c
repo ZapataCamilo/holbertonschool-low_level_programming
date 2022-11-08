@@ -6,6 +6,7 @@
   *@name: Is the name of the dog
   *@age: the age
   *@owner: the owner
+  * Return: raza
   */
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -20,4 +21,5 @@ dog_t *new_dog(char *name, float age, char *owner)
 	raza->age = age;
 	raza->owner = owner;
 	return (raza);
+	free(raza);
 }
