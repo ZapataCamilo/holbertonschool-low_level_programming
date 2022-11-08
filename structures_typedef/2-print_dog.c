@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include "dog.h"
-
+/**
+  *print_dog -  prints a struct dog
+  *@d: Is the struct of dog
+  *
+  *
+  */
 void print_dog(struct dog *d)
 {
-	/*(*d).name = name;
-	(*d).owner = owner;
-	(*d).age = age;*/
-
 	if (d == NULL)
 		printf(" ");
 	if (d->name == NULL)
@@ -19,5 +20,5 @@ void print_dog(struct dog *d)
 	if (d->owner == NULL)
 		printf("Owner: (nil)\n");
 	else
-		printf("Owner: %s\n", d->owner);	
+		printf("Owner: %s\n", d->owner);
 }
