@@ -8,8 +8,8 @@
 */
 size_t print_list(const list_t *h)
 {
-    int count_t;
-    count_t = 0;
+    int count_l;
+    count_l = 0;
 
     while (h != NULL)
     {
@@ -21,8 +21,8 @@ size_t print_list(const list_t *h)
         {
             printf("[0] (nil)\n");
         }
-        count_t++;
+        count_l++;
         h = h->next;
     }
-    return(count_t);
+    return(count_l);
 }
