@@ -2,6 +2,10 @@
 #include <stdlib.h>
 #include "lists.h"
 
+ /**
+ * free_listint - funcion to free a list
+ * @head: one of the lists to free
+*/
 void free_listint(listint_t *head)
 {
 	listint_t *fr;
@@ -9,8 +13,7 @@ void free_listint(listint_t *head)
 	while (head != NULL)
 	{
 		fr = head;
-		fr = fr->next;
-		
+		head = head->next;
 		free(fr);
 	}
 }
