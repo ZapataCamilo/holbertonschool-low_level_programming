@@ -12,6 +12,10 @@ void free_listint2(listint_t **head)
 
 	cur = *head;
 
+	if (cur == NULL)
+	{
+		return (NULL);
+	}
 	while (cur != NULL)
 	{
 		fr_two = cur;
