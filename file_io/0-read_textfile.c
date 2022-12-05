@@ -5,8 +5,6 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-#include <stdlib.h>
-
 /**
  * read_textfile - To read and write it to the POSIX standard output
  * @filename: the name of the file to read and write
