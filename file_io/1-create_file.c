@@ -9,7 +9,7 @@ int _strlen(char *s)
 {
 	int i = 0;
 
-	while (s[i] < 0)
+	while (s[i] != '\0')
 		i++;
 	return (i);
 }
@@ -22,29 +22,24 @@ int _strlen(char *s)
 */
 int create_file(const char *filename, char *text_content)
 {
-	int fd, len;
-	char *buff;
+	int fd = 0, len = 0, wr = 0;
 
 	len = _strlen(text_content);
-
-	buff = malloc(len);
-
+	if (filename == NULL)
+		return (-1);
+	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, S_IRUSR | S_IWUSR);
+	if (fd == -1)
+		return (-1);
 	if (text_content == NULL)
 	{
 		text_content = "";
 	}
-	fd = open(filename, O_CREAT, 0600);
-	if (fd == -1)
-		exit(1);
-	write(fd, text_content, len);
-	close(fd);
-	if (filename == NULL)
+	wr = write(fd, text_content, len);
+	if (wr == -1)
+	{
+		close(fd);
 		return (-1);
-	fd = open(filename, O_RDONLY);
-
-	read(fd, buff, len);
-
+	}
 	close(fd);
-
 	return (1);
 }
