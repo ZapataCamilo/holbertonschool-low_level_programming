@@ -14,5 +14,8 @@ int sum_dlistint(dlistint_t *head)
 		head = head->next;
 		sum += head->n;
 	}
+
+	if (head == NULL)
+		return (0);
 	return (sum);
 }
